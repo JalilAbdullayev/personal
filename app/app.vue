@@ -2,5 +2,6 @@
   <UApp>
     <Header />
     <NuxtPage />
+    <Footer />
   </UApp>
 </template>

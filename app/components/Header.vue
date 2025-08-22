@@ -47,8 +47,7 @@ const items = ref<NavigationMenuItem[]>([
     {
       label: "Jalil Abdullayev",
       to: "/",
-      class:
-        "text-xl py-7.5 px-6 capitalize hover:text-primary text-white duration-150",
+      class: "text-xl py-7.5 px-6 capitalize hover:text-primary text-white",
     },
   ],
   navItems.map(
@@ -74,12 +73,9 @@ const open: Ref<boolean> = ref(false);
     variant="link"
   />
   <nav class="container flex items-center justify-between md:hidden py-7.5">
-    <NuxtLink
-      to="/"
-      class="text-xl text-white capitalize duration-150 hover:text-primary"
-    >
+    <ULink to="/" class="text-xl text-white capitalize hover:text-primary">
       Jalil Abdullayev
-    </NuxtLink>
+    </ULink>
     <UDrawer
       v-model:open="open"
       direction="top"
@@ -94,12 +90,9 @@ const open: Ref<boolean> = ref(false);
         <UIcon name="i-heroicons-solid-menu-alt-1" class="w-9 h-7" />
       </UButton>
       <template #header>
-        <NuxtLink
-          to="/"
-          class="text-xl text-white capitalize duration-150 hover:text-primary"
-        >
+        <ULink to="/" class="text-xl text-white capitalize hover:text-primary">
           Jalil Abdullayev
-        </NuxtLink>
+        </ULink>
         <UButton
           color="neutral"
           variant="ghost"
