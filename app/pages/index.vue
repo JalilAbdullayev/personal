@@ -4,4 +4,9 @@ useHead({
 });
 </script>
 
-<template></template>
+<template>
+  <main class="container flex flex-col gap-30">
+    <HomeHero />
+    <HomeSkills />
+  </main>
+</template>
