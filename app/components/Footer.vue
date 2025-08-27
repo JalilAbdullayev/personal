@@ -66,7 +66,7 @@ const socials = ref<Social[]>([
       </div>
       <div class="flex flex-col gap-2.5">
         <h3>Sosial media</h3>
-        <div class="flex items-center gap-4">
+        <div class="flex flex-wrap items-center gap-4">
           <UButton
             v-for="social in socials"
             :key="social.icon"
