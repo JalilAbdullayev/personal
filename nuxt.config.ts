@@ -6,6 +6,6 @@ export default defineNuxtConfig({
       enabled: true,
     },
   },
-  modules: ["@nuxt/eslint", "@nuxt/image", "@nuxt/ui", "@nuxthub/core"],
+  modules: ["@nuxt/eslint", "@nuxt/image", "@nuxt/ui"],
   css: ["~/assets/css/main.css"],
 });

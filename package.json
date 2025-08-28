@@ -13,7 +13,6 @@
     "@nuxt/eslint": "1.8.0",
     "@nuxt/image": "1.11.0",
     "@nuxt/ui": "3.3.2",
-    "@nuxthub/core": "0.9.0",
     "eslint": "^9.33.0",
     "nuxt": "^4.0.3",
     "typescript": "^5.9.2",
@@ -24,7 +23,6 @@
     "@iconify-json/fa6-regular": "^1.2.4",
     "@iconify-json/fa6-solid": "^1.2.4",
     "@iconify-json/fa7-brands": "^1.2.0",
-    "@iconify-json/heroicons-solid": "^1.2.1",
-    "wrangler": "^4.33.1"
+    "@iconify-json/heroicons-solid": "^1.2.1"
   }
 }
