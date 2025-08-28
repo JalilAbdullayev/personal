@@ -1,75 +1,39 @@
-# Nuxt Minimal Starter
+# Personal Full-Stack Project
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A full-stack personal portfolio project built with Nuxt 3. It features an integrated backend using the Nitro server engine and is designed for deployment with a database on NuxtHub.
 
-## Setup
+## Tech Stack
 
-Make sure to install dependencies:
+- **Framework:** [Nuxt 3](https://nuxt.com/)
+- **Server:** [Nitro](https://nitro.unjs.io/)
+- **Deployment & Database:** [NuxtHub](https://hub.nuxt.com/)
+- **Language:** TypeScript
+- **Package Manager:** [Bun](https://bun.sh/)
+
+## Getting Started
+
+### 1. Install Dependencies
+
+This project uses Bun as the package manager. From the root directory, run:
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
 bun install
 ```
 
-## Development Server
+### 2. Run the Development Server
 
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
+This will start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+bun dev
 ```
 
-Locally preview production build:
+## Project Structure
 
-```bash
-# npm
-npm run preview
+- `app/`: Contains the Vue.js frontend application.
+- `server/api/`: Contains the backend API routes powered by Nitro.
+- `nuxt.config.ts`: The main configuration file for Nuxt.
 
-# pnpm
-pnpm preview
+## Deployment
 
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+This application is configured to be deployed on [NuxtHub](https://hub.nuxt.com/). Connect this repository to a NuxtHub project to deploy it automatically.
