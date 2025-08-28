@@ -104,7 +104,13 @@ const handleScroll = () => {
             'container flex items-center justify-between border-b-2 border-zinc-800 pb-4 gap-4',
         }"
       >
-        <UButton color="neutral" variant="ghost" size="xl" class="rotate-180">
+        <UButton
+          color="neutral"
+          variant="ghost"
+          size="xl"
+          class="rotate-180"
+          aria-label="Menu"
+        >
           <UIcon name="i-heroicons-solid-menu-alt-1" class="w-9 h-7" />
         </UButton>
         <template #header>
@@ -119,6 +125,7 @@ const handleScroll = () => {
             variant="ghost"
             icon="i-fa6-solid-xmark"
             size="xl"
+            aria-label="Close"
             @click="open = false"
           />
         </template>

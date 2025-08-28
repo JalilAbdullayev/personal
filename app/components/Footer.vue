@@ -4,40 +4,49 @@ const year =
     ? "2025"
     : `2025 - ${new Date().getFullYear()}`;
 type Social = {
+  name: string;
   icon: string;
   link: string;
 };
 
 const socials = ref<Social[]>([
   {
+    name: "WhatsApp",
     icon: "i-fa7-brands:whatsapp",
     link: "https://wa.me/994104154315",
   },
   {
+    name: "Telegram",
     icon: "i-fa7-brands:telegram",
     link: "https://t.me/Jalil02",
   },
   {
+    name: "GitHub",
     icon: "i-fa7-brands:github",
     link: "https://github.com/JalilAbdullayev",
   },
   {
+    name: "LinkedIn",
     icon: "i-fa7-brands:linkedin-in",
     link: "https://linkedin.com/in/jalil-abdullayev",
   },
   {
+    name: "Instagram",
     icon: "i-fa7-brands:instagram",
     link: "https://instagram.com/jalil_abdullayev_",
   },
   {
+    name: "Facebook",
     icon: "i-fa7-brands:facebook",
     link: "https://fb.com/calil.abdullayev00",
   },
   {
+    name: "Twitter",
     icon: "i-fa7-brands:x-twitter",
     link: "https://x.com/jalilabdullayev",
   },
   {
+    name: "Threads",
     icon: "i-fa7-brands:threads",
     link: "https://threads.com/@jalil_abdullayev_",
   },
@@ -69,13 +78,14 @@ const socials = ref<Social[]>([
         <div class="flex flex-wrap items-center gap-4">
           <UButton
             v-for="social in socials"
-            :key="social.icon"
+            :key="social.name"
             variant="link"
             :to="social.link"
             target="_blank"
             :icon="social.icon"
             size="lg"
             class="text-neutral-300 hover:scale-110"
+            :aria-label="social.name"
           />
         </div>
       </div>
