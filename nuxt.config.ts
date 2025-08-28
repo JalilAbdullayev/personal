@@ -8,12 +8,4 @@ export default defineNuxtConfig({
   },
   modules: ["@nuxt/eslint", "@nuxt/image", "@nuxt/ui", "@nuxthub/core"],
   css: ["~/assets/css/main.css"],
-  nitro: {
-    experimental: {
-      openAPI: true,
-    },
-  },
-  hub: {
-    database: true,
-  },
 });
