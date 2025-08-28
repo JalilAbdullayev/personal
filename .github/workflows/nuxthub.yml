@@ -31,4 +31,4 @@ jobs:
       - name: Build & Deploy to NuxtHub
         uses: nuxt-hub/action@v2
         with:
-          project-key: jalilabdullayev-4gik
+          project-key: jalilabdulla-hh47
